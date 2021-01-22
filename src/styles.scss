@@ -1,0 +1,14 @@
+/* You can add global styles to this file, and also import other style files */
+@import '~bootstrap/dist/css/bootstrap.min.css';
+
+body{
+  background-color: #2E3E51;
+}
+
+.wrapper{
+  background-color: rgb(176, 184, 223);
+  &:hover{
+    // cursor: pointer;
+    background-color: rgb(199, 200, 202);
+  }
+}

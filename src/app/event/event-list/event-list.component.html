@@ -1,0 +1,25 @@
+<div class="container">
+  <h1>Upcoming Angular event</h1>
+    <hr class="bg-white">
+    <div class="row" >
+      <div class="col-6" *ngFor="let i of item">
+        <div class="wrapper mb-4 p-3 text-info" (click)="handleEventClicked(i.name)">
+          <h2>{{i.name}}</h2>
+          <div>Date: {{i.date}}</div>
+          <div [ngSwitch]="i?.time"> <!--[]="i?.time === '8: 00 am'"-->
+              Time: {{i.time}}
+            <span *ngSwitchCase="'8:00 am'">(Early Start)</span>
+            <span *ngSwitchCase="'10:00 am'">(Late Start)</span>
+            <span *ngSwitchDefault>(Normal Start)</span>
+          </div>
+          <div>Price: ${{i?.price}}</div>
+          <div *ngIf="i?.location">
+            <span>{{i.location.city}}</span>
+            <span>&nbsp;</span>
+            <span>Location: {{i.location.state}}, {{i.location.country}}</span>
+          </div>
+          <button class="btn btn-sm mt-2 btn-danger" (click)="handleClick()">Click Me!</button>
+        </div>
+      </div>
+    </div>
+</div>
