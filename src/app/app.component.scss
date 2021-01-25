@@ -1,6 +1,21 @@
 .nav_bg {
   background-color: darkgray;
-  // color: #ffffff;
+}
+
+.toast-success {
+  background-color: #51a351;
+}
+
+.toast-error {
+  background-color: #bd362f;
+}
+
+.toast-info {
+  background-color: #2f96b4;
+}
+
+.toast-warning {
+  background-color: #f89406;
 }
 // "/node_modules/tether/dist/js/tether.js",
 // "/node_modules/popper/dist/js/popper.js",

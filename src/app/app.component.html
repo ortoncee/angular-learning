@@ -1,51 +1,48 @@
-<div class="container-fuild">
-  <nav class="navbar navbar-expand-lg navbar-light nav_bg">
-    <div class="container">
-      <a class="navbar-brand text-white" href="#">ngDesign</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active text-white" aria-current="page" href="#">All Events</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-white" href="#">Create Event</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Events
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-white" href="#">Products</a>
-          </li>
-        </ul>
-        <div class="ml-auto">
-          <form class="d-flex">
-            <input class="form-control w-50 mr-2" type="search" placeholder="Search Sessions" aria-label="Search">
-            <button class="btn btn-outline-success btn-sm text-white" type="submit">Search</button>
-            <ul class="navbar-nav mb-2 ml-auto mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link text-white" href="#" tabindex="-1" aria-disabled="false">welcome john</a>
-              </li>
-            </ul>
-          </form>
-        </div>
-      </div>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container">
+    <a class="navbar-brand" href="#">Ng Product&Events</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mx-auto">
+        <li class="nav-item active">
+          <a class="nav-link" [routerLink]="['/products']">Products<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/events">All Event</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"> Create Event</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Events
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form>
     </div>
-  </nav>
-</div>
+  </div>
+</nav>
+
 
 <!-- <app-event></app-event> -->
-<app-product></app-product>
+<!-- <app-home></app-home> -->
+<!-- <app-product></app-product> -->
 
 
 <router-outlet></router-outlet>
