@@ -39,7 +39,11 @@
                       [style.width.px]="imageWidth" [style.magin.px]="imageMargin">
                     </a>
                   </td>
-                  <td col="scope">{{product.productName}}</td>
+                  <td col="scope">
+                    <a class="rmline" [routerLink]="['/products', product.productId]">
+                      {{product.productName}}
+                    </a>
+                  </td>
                   <td col="scope">{{product.productCode | lowercase | convertToSpaces: '-'}}</td>
                   <td col="scope">{{product.releaseDate}}</td>
                   <td col="scope">{{product.price | currency:'USD':'symbol':'1.2-2'}}</td>

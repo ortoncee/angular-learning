@@ -40,10 +40,9 @@ export class ProductListComponent implements OnInit {
   // performFilter(filterBy: string): IProduct[] {
   //   filterBy = filterBy.toLocaleLowerCase();
   //   return this.products.filter((product: IProduct) => {
-  //     // tslint:disable-next-line: no-unused-expression
-  //     product.productName.toLocaleLowerCase().indexOf(filterBy) !== -1;
+  //     return product.productName.toLocaleLowerCase().indexOf(filterBy) !== -1;
   //   });
-  // }
+  // }chukwuemeka.agu@polarisdigitech.net
 
   toggleImage(): void {
     this.showImage = !this.showImage;
